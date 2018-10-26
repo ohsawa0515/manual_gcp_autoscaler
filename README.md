@@ -7,9 +7,17 @@ It is a tool to change the minimum and maximum number of instances under [GCP Ma
 # Installation
 
 ```console
-$ go get -u github.com/golang/dep/cmd/dep
 $ go get -u github.com/ohsawa0515/manual_gcp_autoscaler
-$ dep ensure
+$ cd manual_gcp_autoscaler
+$ make dep
+```
+
+# Build
+
+```console
+$ make build
+$ ls  ./bin/*/manual-gcp-autoscaler
+bin/darwin_amd64/manual-gcp-autoscaler bin/linux_amd64/manual-gcp-autoscaler
 ```
 
 # Set GCP credentials
